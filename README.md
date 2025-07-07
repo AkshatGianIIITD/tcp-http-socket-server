@@ -26,34 +26,34 @@ The project closely mimics real-world web server-client behavior, enhancing unde
 ---
 
 ## 🗂️ File Structure
-|
-├── 2022018_2022051_Document.pdf
-├── 2022018_2022051_PPT.pptx
-├── Part A
-│   ├── 404_error.html
-│   ├── HelloWorld.html
-│   └── server.py
-├── Part B
-│   ├── 404_error.html
-│   ├── HelloWorld.html
-│   ├── client.py
-│   └── server.py
-├── Part C
-    ├── 404_error.html
-    ├── HelloWorld.html
-    ├── client.py
-    └── server.py
+|  
+├── 2022018_2022051_Document.pdf  
+├── 2022018_2022051_PPT.pptx  
+├── Part A  
+│   ├── 404_error.html  
+│   ├── HelloWorld.html  
+│   └── server.py  
+├── Part B  
+│   ├── 404_error.html  
+│   ├── HelloWorld.html  
+│   ├── client.py  
+│   └── server.py  
+├── Part C  
+    ├── 404_error.html  
+    ├── HelloWorld.html  
+    ├── client.py  
+    └── server.py  
 
 ### 🔹 Steps to Run Part A (Single-threaded Server)
 
-1. Open a command prompt and start the server:
+1. Open a command prompt and start the server:  
    python server.py
 
-2. Open another command prompt and find your local IPv4 address (on Windows):
+2. Open another command prompt and find your local IPv4 address (on Windows):  
    ipconfig
 
-3. Open a web browser and enter the following URL in the address bar:
-   http://<IPv4-address>:12000/HelloWorld.html
+3. Open a web browser and enter the following URL in the address bar:  
+   http://<IPv4-address>:12000/HelloWorld.html  
   -Replace <IPv4-address> with the one obtained in Step 2.
   -12000 is the default port number used in the server.
   -HelloWorld.html is the filename to be fetched.
@@ -65,11 +65,11 @@ The project closely mimics real-world web server-client behavior, enhancing unde
 
 ### 🔹 Steps to Run Part B (Multithreaded Server with Custom Client)
 
-1. Open a terminal and check your local IPv4 address (on Windows):
+1. Open a terminal and check your local IPv4 address (on Windows):  
    ipconfig
 
 2. In client.py, locate the section where the server host IP is defined (in the main() function), and replace it with current server IPv4 address.
-   - If running both server and client on the same machine, you can use:
+   - If running both server and client on the same machine, you can use:  
     localhost
    - If running the server and client on different machines, use the actual IPv4 address of the server machine.
 
@@ -83,10 +83,10 @@ The project closely mimics real-world web server-client behavior, enhancing unde
 
 1. This part is similar to Part B, but here the client is more flexible — it accepts the **server IP address**, **port number**, and **filename** as command-line arguments.
 
-2. In one terminal, start the multithreaded server:
+2. In one terminal, start the multithreaded server:  
    python server.py
 
-3. In another terminal, run the client using the following format:
+3. In another terminal, run the client using the following format:  
    python client.py <server_host> <server_port> <filename>
    
 4. This allows the client to dynamically send requests to any server by specifying its IP address and port, and retrieve the requested file.
@@ -144,5 +144,5 @@ The project closely mimics real-world web server-client behavior, enhancing unde
 - Abhinav Kumar Saxena (2022018)
 
 ## 📚 Course
-**Computer Networks**
+**Computer Networks**  
 Instructor: **Dr. Bijendra Nath Jain**
